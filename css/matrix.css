@@ -1,0 +1,72 @@
+.sr5 {
+    /* The overall matrix-action-center */
+    .matrix-action-center {
+        width: 300px;
+        border: 1px solid pink;
+
+        /* An two segment row with a big left and small right side */
+        .matrix-action-center-row {
+            display: flex;
+            justify-content: space-between;
+
+            border: 1px solid black;
+
+            .matrix-action-center-left {
+                flex: 3;
+            }
+
+            .matrix-action-center-right {
+                flex: 1;
+            }
+        }
+
+        /* A section containing a list of things */
+        .matrix-action-center-section {
+            border: 1px solid black;
+
+            .action-section-header {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid red;
+
+                .action-section-header-label {
+                }
+                .action-section-header-icons {
+                    justify-self: flex-end;
+                }
+            }
+            .matrix-action-section-content {
+                .action-section-line {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .action-section-line-label.parent {
+                        border-bottom: 1px solid black;
+                    }
+                    .action-section-line-label.child {
+                        border-left: 1px solid black;
+                        margin-left: 7px;
+                    }`
+
+                    .action-section-line-icons {
+                        justify-self: flex-end;
+
+                        display: flex;
+
+                        * {
+                            margin-left: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section {
+        margin-bottom: 7px;;
+    }
+
+    .text {
+        padding: 7px;
+    }
+}
